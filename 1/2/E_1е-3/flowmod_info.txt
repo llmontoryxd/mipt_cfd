@@ -1,0 +1,121 @@
+ 
+    Flow modellium lab solver
+    Web page: www.flowmodellium.ru
+ 
+ driver,             release date 03.08.2018       
+ bc_common,          release date 24.04.2018       
+ flow_class,         release date 03.08.2018       
+ flow_common,        release date 08.07.2018       
+ flow_io,            release date 08.12.2018       
+ initialize,         release date 07.10.2018       
+ lu_sgs_solver,      release date 08.06.2018       
+ numerics_common,    release date 16.07.2018       
+ prim_reconst,       release date 20.05.2018       
+ partition module,   release date 07.10.2018       
+ rs_common,          release date 28.02.2018       
+ restart,            release date 04.06.2018       
+ revolve_io,         release date 05.02.2017       
+ scheme_rhs,         release date 03.08.2018       
+ steady_solver,      release date 03.08.2018       
+ 
+  ###### Solver input data after initialization:
+  
+  ## Geometrical parameters ##
+  CharLength=    1.00000    
+  Geometryscale=    1.00000    
+   ------------------------
+  
+  ## Flow model data ##
+  FlowModel= perfect   
+  Inviscid equations are solved
+  Number of species=1
+  Single-component perfect gas
+  Perfect gas gamma=      1.400000    
+  Perfect gas Prandtl=     0.7200000    
+  Viscosity type=  powerlaw
+  Single-component gas
+  Gas molar mass =    28.84    
+  
+  Run is restarted from perfect
+  
+  
+  StefanBoltzmann  =     0.5670320E-07
+  Emissivity constant   =     0.7000000    
+  
+  Scales for physical variables:
+   CharLength   =      1.000000    
+   CharRho      =     0.2028390    
+   CharTemp     =      264.0001    
+   CharVel      =      275.8987    
+   GasConst     =      288.3337    
+   CharPressure =      15440.13    
+   CharVisc     =     0.1655409E-04
+   CharCond     =     0.4773102E-02
+   CharHeatFlux =      1.260099    
+   Force*       =      15440.    
+   Molar mass of air=     28.836    
+   CharRe       =      3380616.    
+   EosScale     =      1.000000    
+    Old check: px/(rhox*vx**2):   1.0000      px/(rhox*(Ru/Mu)*Temp):  0.34679E-01
+
+  
+   ------------------------
+  
+  ## Nesvetay core settings ##
+  Direction-wise TVD1D reconstruction
+  TVDLimiter=minmod
+  Number of MPI processes 1
+  Number of OpenMP threads 24
+  Total number of threads 24
+  Complete mesh counts:
+   Number of vertices:  32040
+   Number of cells:  23496
+   Number of faces:  78851
+  Limiter length=  3
+ For OpenMP:
+  element chunk =  244  out of  23496
+  face chunk    =  821  out of  78851
+  vertex chunk  =  333  out of  32040
+   ------------------------
+  
+  ## Flowmodellium solver settings ##
+  Use kinetic/vt nondimen
+  Classical HLLC Riemann solver of Toro et. al. is used, with Toro wave speed estimates
+  distance_limit_in_meters =  0.1000E+16
+  list_wall_types= -8 -81 -83 -85
+  Accurate RS faces in complete mesh=  78851  out of  78851   or in %:  100.0    
+   for boundary 4 in meters we have min_hn= 0.50E-03 max_hn= 0.50E-03 Re number based on smallest hn= 0.30E+04
+  CFL= 0.2000E+05
+  Number of smaller CFL values=2000
+  Max num interation = 1000000000
+  L1ResidualTolerance= 0.1000E-10
+  L1ConveranceTolerance= 0.1000E-06
+  Conventional version of LU_SGS is used
+  Safety cofficient for LU-SGS diagonal:    1.000
+  Multiplyer for face terms in LU-SGS diagonal =     1.1    
+  Num_of_lusgs_cycles=1
+  Use jacobi correction..
+  Positivity tolerances:
+       Density  tolerance in kg/m^3=    0.10000E-14
+  Density  tolerance for implicit sch   0.10000E-07
+    Temperature tolerance in Kelvin=     10.000    
+           Pressure tolerance in Pa=    0.10000E-04
+            Mass fraction tolerance=    0.10000E-24
+  
+  
+  ------------------------
+  ## Data writing settings ##
+  Use single-block restart without MPI write
+  Write_data_freq=    10
+  Write_restart_freq=1000
+  1d data is written
+  surface data is written
+  volume data is written
+ 
+  ------------------------
+  ## Other settings ##
+  SRef=    7.85000    
+  L_capsule=    3.77700    
+  x_T=    1.32195    
+  y_T=  -0.151080    
+ -------------------------------

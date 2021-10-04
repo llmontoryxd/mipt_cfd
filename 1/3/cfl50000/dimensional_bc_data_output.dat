@@ -1,0 +1,18 @@
+
+Bcnum= 1 bctype=-30 bcname=freestream
+InputData=
+      0.20283900  comp=1
+    489.67160000  comp=2
+      0.00000000  comp=3
+      0.00000000  comp=4
+  15440.12700000  comp=5
+  Free-stream Mach number (apprximate for chemistry)=   1.500    
+  Free-stream temperature=   264.0    Stagnation temperature=   382.8    
+  Free-stream viscosity=  0.1655E-04
+  Re number per 1 meter=   0.600000E+07
+
+Bcnum= 2 bctype=-7 bcname=euler wall
+
+Bcnum= 3 bctype=-40 bcname=supersonicoutflow
+
+Bcnum= 4 bctype=-8 bcname=no-slip wall

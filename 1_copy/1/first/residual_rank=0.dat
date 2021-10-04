@@ -1,0 +1,21 @@
+Iter=   22000  Value= 0.937E-05
+Position in mm =  0.475E+05  0.100E+04   5.00    
+Cell volume  0.547E-04
+Cell diameter  0.110E-02
+Face 1  ratio=   1.10      0.604E-03  0.549E-03
+Face 2  bcnum =3
+Face 3  ratio=   1.10      0.549E-03  0.500E-03
+Face 4  ratio=   1.06       2.35       2.49    
+Face 5  ratio=   1.00      0.500E-02  0.500E-02
+Face 6  bcnum =2
+Rho  0.1910    
+Vel   110.6      0.1878E-03 -0.3680E-03
+Pressure  0.1549E+05
+Temp   281.4    
+   First 5 comp residual = 0.9367E-05
+Comp by component:
+   comp=1  residual= 0.9367E-05
+   comp=2  residual=-0.9441E-07
+   comp=3  residual=-0.4445E-08
+   comp=4  residual= 0.2420E-09
+   comp=5  residual=-0.2653E-11

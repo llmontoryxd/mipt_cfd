@@ -1,0 +1,36 @@
+  bc_types,                release date 24.04.2018
+  
+  ###General periodic boundary:
+  BcTypePeriodic  =-50
+  BcTypePeriodicX =-51
+  BcTypePeriodicY =-52
+  BcTypePeriodicZ =-53
+  
+  ###Inviscid continuum solver bc types:
+  BcTypeEulerWall  =-7
+  BcTypeSymmetry   =-77
+  BcTypeFreeStream =-30
+  BcTypeFreeStreamComplete =-300
+  BcTypeConnect    =-71
+  BcTypeSupersonicOutFlow =-40
+  BcTypeSubsonicOutFlow1 =-41
+  
+  ###Viscous continuum solver:
+  BcTypeNoSlipWall =-8
+  BcTypeNoSlipWall_ECW =-81
+  BcTypeNoSlipWall_ECW_Complete =-810
+  BcTypeSlipWall =-83
+  BcTypeEqvWall  =-85
+  BcTypeEqvWall_complete  =-850
+  BcTypeBlowing  =-87
+  BcTypeAblation =-89
+  
+  ###Boundary conditions specific for kinetic solver:
+  BcTypeDiffusive   =-20
+  BcTypeEvaporation =-21
+  BcTypeEqvTemp     =-25
+  
+  ###User-defined boundary conditions for experimental code versions:
+  UserDef1 =-101
+  UserDef2 =-102
+  UserDef3 =-103

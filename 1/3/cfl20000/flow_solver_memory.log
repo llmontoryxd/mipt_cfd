@@ -1,0 +1,41 @@
+  Store memory required in GB...
+    
+  Vertex list size : 0.5578E-02
+  Face list size   : 0.2614E-01
+  Cell list size   : 0.1287E-01
+  Stencil list size: 0.8096E-03
+  BcPart  list size: 0.1558E-04
+  Total memory usage by mesher :  0.4541E-01
+    
+  Allocate ConsVect, PrimVect, PrimVectVert vectors...
+  size in gb for ConsVect= 0.8753E-03
+  size in gb for PrimVect= 0.8753E-03
+  size in gb for PrimVectVert = 0.1194E-02
+ 
+  Flow solver memory so far=  0.4836E-01
+  size in gb for PrimVectFaceData= 0.5875E-02
+  size in gb for FaceGradData = 0.8812E-02
+ 
+  Flow solver memory so far=  0.6304E-01
+  PVSlopeLimiter  is not allocated!
+  size in gb for FaceFlux = 0.2937E-02
+ 
+  Flow solver memory so far=  0.6598E-01
+  size in gb for Rhs = 0.8753E-03
+  size in gb for Resi_5_comp = 0.4376E-03
+ 
+  Flow solver memory so far=  0.6747E-01
+  size in gb for DeltaCSV = 0.8753E-03
+ 
+  allocate Inverted_LUSGS_Diagonal...
+  size in gb for Inverted LUSGS diagonal = 0.2188E-02
+ 
+  Flow solver memory so far=  0.7071E-01
+ 
+  Flow solver memory so far=  0.7071E-01
+  
+  Start allocating surface data arrays...
+  size in gb for BndPrimVect_for_viscous_flux = 0.2374E-02
+ ----------------------
+Complete flow solver memory usage is 0.8163E-01 gb
+Nesvetay mesher takes  55.63      %

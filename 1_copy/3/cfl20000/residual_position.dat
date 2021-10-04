@@ -1,0 +1,9 @@
+Iter=       1  Value= 0.359E+04  Position in meters = -0.9997      0.1603E-01  0.1500E-01
+Iter=    1000  Value=  7.72      Position in meters = -0.9997      0.1603E-01  0.5000E-02
+Iter=    2000  Value= 0.401      Position in meters = -0.9539      0.2998      0.5000E-02
+Iter=    3000  Value= 0.122      Position in meters =   23.21       1.000      0.1500E-01
+Iter=    4000  Value= 0.856E-01  Position in meters = -0.9997      0.1603E-01  0.2500E-01
+Iter=    5000  Value= 0.450E-01  Position in meters =   26.44       1.000      0.2500E-01
+Iter=    6000  Value= 0.324E-01  Position in meters =   33.90       1.000      0.5000E-02
+Iter=    7000  Value= 0.285E-01  Position in meters = -0.9997      0.1603E-01  0.1500E-01
+Iter=    8000  Value= 0.192E-01  Position in meters =   33.90       1.000      0.1500E-01

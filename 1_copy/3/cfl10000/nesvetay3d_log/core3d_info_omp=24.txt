@@ -1,0 +1,110 @@
+ 
+  Calling InitMesher after ReadBcSetIni
+  Initialise Nesvetay 3D computational core
+  Data: 27.09.2021
+  Time: 23:12
+ 
+ basic_classes,           release date 19.05.2018  
+ bc_types,                release date 24.04.2018  
+ common_proc,             release date 28.05.2018  
+ mesher_io,               release date 03.12.2018  
+ mesh_reading,            release date 20.06.2018  
+ nesvetay_drv,            release date 12.08.2018  
+ reconst_lsq,             release date 22.06.2018  
+ reconst_tvd1d,           release date 15.12.2017  
+ volume_mesh_class,       release date 05.06.2018  
+ 
+  Call StarCD/ICEM mesh reader...
+  Vert=  0.320E-01 mln  Cells=  0.235E-01 mln
+  Start reading vertexes, using "g" format...
+  completed reading vertexes...
+  Start reading cell composition...
+  completed reading cells...
+  StarCD reading completed
+  Build up face list ..
+  Count faces...
+   Estimated number of faces:      140976
+  Calculated number of faces:  78851
+  Allocate face list structure
+  Create face list...
+     0.43E-02% complete
+     25.% complete
+     50.% complete
+     75.% complete
+     0.10E+03% complete
+  Compute angles between face edges
+   percent completed=24
+   percent completed=49
+   percent completed=74
+   percent completed=99
+  Compute normal vectors and face decompositions
+   percent completed=  33.    
+   percent completed=  67.    
+   percent completed= 0.10E+03
+  Store face orientation information
+  Initialise face boundary lists..
+  Allocate face stencils....
+  Total number of faces = 78851
+     Completed
+  Mesh format:   Star CD
+  Spatial scheme:  tvd1d                    
+  Limiting type:  minmod                   
+   Mc_Weight:  1.250    
+   Muscl_Weight: -1.000    
+ 
+  Integer size : 4
+  Real size    : 8
+ 
+  Number of vertices:32040
+  Number of cells   :23496
+  Number of faces   :78851
+  Number of vertices, mln: 0.32E-01
+  Number of cells, mln  : 0.23E-01
+  Number of faces, mln  : 0.79E-01
+ 
+  Number of bricks, thousands   :  23.    
+ 
+ --------------------------------------------------------
+  Various geometric data
+   Increment_tol for limiters: 0.2220E-14
+   Smallest angle:   88.47    
+   Shortest edge after scaling:  0.4947E-05
+   Smallest cell volume after scaling:  0.1446E-08
+   Verification of Ostrogradskiy theorem for all blocks:    0.27E-14
+   Smallest cell diameter: 0.50E-05
+ --------------------------------------------------------
+ 
+  Boundary condition counts
+   Boundary 1 has 264 faces in complete mesh
+   Boundary 2 has 15931 faces in complete mesh
+   Boundary 3 has 267 faces in complete mesh
+   Boundary 4 has 264 faces in complete mesh
+ 
+ 
+  Update info file...
+ 
+  Timing report...
+      Total time to initialize :    4.331    
+            Reading mesh files :    3.609    
+            Mesh init          :   0.3633    
+            Various            :   0.5514E-01
+            Face mapping       :   0.7274E-02
+            Reconstruction     :    0.000    
+            Remaining stuff    :   0.2405    
+  Memory usage report, in gb ...
+              Vertex list size :   0.5578E-02
+              Face list size   :   0.2614E-01
+              Cell list size   :   0.1287E-01
+              Stencil list size:   0.8096E-03
+              BcPart  list size:   0.1558E-04
+              Total mesh size  :   0.4541E-01
+ ------------------------
+  chunk_division=  4
+  element chunk_attempted=  244  out of  23496
+  element chunk actual   =  244  out of  23496
+  face chunk_attempted   =  821  out of  78851
+  face chunk actual      =  821  out of  78851
+  vertex chunk_attempted =  333  out of  32040
+  vertex chunk  actual   =  333  out of  32040
+ 
+  Init mesher complete...
