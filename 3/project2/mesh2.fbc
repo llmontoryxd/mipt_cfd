@@ -1,0 +1,13 @@
+# family_boco file written by ICEM CFD by Chikitkin on Thu Oct 21 18:30:30 RTZ 2 (Р·РёРјР°) 2021
+## solver STAR-CD
+"SOLID"
+"SOLID" "color" 3403390
+"IN"
+"IN" "color" 16663900
+"OUT"
+"OUT" "color" 16663900
+"SYMMETRY"
+"SYMMETRY" "color" 16663900
+"WALL"
+"WALL" "color" 16663900
+

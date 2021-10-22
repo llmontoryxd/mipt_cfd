@@ -1,0 +1,46 @@
+# Written by ICEM CFD 15.0, user Chikitkin, Thu Oct 21 18:30:30 RTZ 2 (Р·РёРјР°) 2021
+
+begin family SOLID
+    begin solver "STAR-CD"
+        begin bctype color
+            active 1
+            color 3403390 1
+        end bctype color
+    end solver "STAR-CD"
+end family SOLID
+
+begin family IN
+    begin solver "STAR-CD"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "STAR-CD"
+end family IN
+
+begin family OUT
+    begin solver "STAR-CD"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "STAR-CD"
+end family OUT
+
+begin family SYMMETRY
+    begin solver "STAR-CD"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "STAR-CD"
+end family SYMMETRY
+
+begin family WALL
+    begin solver "STAR-CD"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "STAR-CD"
+end family WALL

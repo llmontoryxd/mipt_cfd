@@ -1,0 +1,630 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 15.0 on Tue Oct 27 17:23:43 2020
+// written by ICEM CFD - version 15.0 on Tue Oct 27 17:35:15 2020
+// written by ICEM CFD - version 15.0 on Tue Oct 27 17:38:05 2020
+// written by ICEM CFD - version 15.0 on Tue Oct 27 18:07:16 2020
+// written by ICEM CFD - version 15.0 on Sun Nov 01 19:58:29 2020
+// written by ICEM CFD - version 15.0 on Sun Nov 01 21:56:01 2020
+// written by ICEM CFD - version 15.0 on Sun Nov 01 22:05:49 2020
+// written by ICEM CFD - version 15.0 on Sun Nov 01 22:26:52 2020
+// written by ICEM CFD - version 15.0 on Sun Nov 01 23:18:17 2020
+// written by ICEM CFD - version 15.0 on Sun Nov 01 23:19:46 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 11:39:06 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 11:53:41 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 14:14:55 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 14:18:33 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 14:23:07 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 14:29:51 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 14:52:51 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 15:22:05 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 16:08:38 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 16:11:38 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 17:43:18 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 17:56:54 2020
+// written by ICEM CFD - version 15.0 on Mon Nov 02 17:58:29 2020
+// written by ICEM CFD - version 15.0 on Thu Oct 21 17:14:25 2021
+// written by ICEM CFD - version 15.0 on Thu Oct 21 17:21:58 2021
+// written by ICEM CFD - version 15.0 on Thu Oct 21 18:31:29 2021
+
+set_triangulation_tolerance 9.9999999e-009
+define_family SOLID color 3403390
+define_family IN color 16663900
+define_family OUT color 16663900
+define_family SYMMETRY color 16663900
+define_family WALL color 16663900
+
+prescribed_point 0 1 0 family WALL name pnt.03
+prescribed_point -1 0 0 family WALL name GEOM.67
+prescribed_point 1 0 0 family WALL name GEOM.77
+prescribed_point 50 0 0 family SYMMETRY name GEOM.87
+prescribed_point -50 6.1232339957368e-015 0 family SYMMETRY name GEOM.88
+prescribed_point -50 7.8886090522101e-031 3 family SYMMETRY name GEOM.101
+prescribed_point 50 0 3 family SYMMETRY name GEOM.102
+prescribed_point 1 0 3 family WALL name GEOM.103
+prescribed_point -1 0 3 family WALL name GEOM.104
+prescribed_point 0 50 0 family IN name GEOM.19
+prescribed_point 0 50 3 family IN name GEOM.30
+define_curve family WALL tetra_size 1e+010 name crv.00
+bspline
+5,3,1
+0,0,0,1.5707963267949,1.5707963267949
+3.1415926535898,3.1415926535898,3.1415926535898
+-1,0,0,1
+-0.70710678118655,0.70710678118655,0,0.70710678118655
+-6.1232339957368e-017,1,0,1
+0.70710678118655,0.70710678118655,0,0.70710678118655
+1,1.2246467991474e-016,0,1
+define_curve family SYMMETRY tetra_size 1e+010 name crv.03
+bspline
+2,2,0
+0,0,1,1
+-50,0,0
+-1,0,0
+define_curve family SYMMETRY tetra_size 1e+010 name crv.06
+bspline
+2,2,0
+0,0,1,1
+1,0,0
+50,0,0
+define_curve family WALL tetra_size 1e+010 name srf.04e23
+bspline
+2,2,0
+0,0,1,1
+-1,0,0
+-1,0,3
+define_curve family SYMMETRY tetra_size 1e+010 name srf.04e24
+bspline
+2,2,0
+-1,-1,-0,-0
+-1,0,3
+-50,0,3
+define_curve family SYMMETRY tetra_size 1e+010 name srf.04e25
+bspline
+2,2,0
+-1,-1,-0,-0
+-50,0,3
+-50,0,0
+define_curve family WALL tetra_size 1e+010 name srf.04.1e27
+bspline
+2,2,1
+0,0,1,1
+1,1.2246467991474e-016,0,1
+1,1.2246467991474e-016,3,1
+define_curve family WALL tetra_size 1e+010 name srf.04.1e28
+bspline
+8,5,1
+-1,-1,-1,-1,-1
+-0.5,-0.5,-0.5,-0,-0
+-0,-0,-0
+1,1.2246467991474e-016,3,1
+1,0.35355339059328,3,1
+0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+0.35355339059328,1,3,1
+-0.35355339059328,1,3,1
+-0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+-1,0.35355339059328,3,1
+-1,0,3,1
+define_curve family SYMMETRY tetra_size 1e+010 name srf.04.2e32
+bspline
+2,2,0
+-1,-1,-0,-0
+50,0,3
+1,0,3
+define_curve family SYMMETRY tetra_size 1e+010 name srf.04.3e37
+bspline
+2,2,1
+-1,-1,-0,-0
+50,0,3,1
+50,0,0,1
+define_curve family IN tetra_size 1e+010 name tmp00 vertex1 GEOM.19
+bspline
+10,2,0
+0,0,0.4285714328289,0.85714286565781,0.89999997615814
+1.2857142686844,1.7142857313156,2.0999999046326,2.1428570747375,2.5714285373688
+3,3
+0,50,0
+0,50,0.4285714328289
+0,50,0.85714286565781
+0,50,0.89999997615814
+0,50,1.2857142686844
+0,50,1.7142857313156
+0,50,2.0999999046326
+0,50,2.1428570747375
+0,50,2.5714285373688
+0,50,3
+define_curve family OUT tetra_size 1e+010 name crv.4 vertex2 GEOM.19
+bspline
+3,3,1
+0,0,0,1.5707963267949,1.5707963267949
+1.5707963267949
+50,0,0,1
+35.355339059327,35.355339059327,0,0.70710678118655
+3.0616169978684e-015,50,0,1
+define_curve family IN tetra_size 1e+010 name crv.5 vertex1 GEOM.19
+bspline
+3,3,1
+1.5707963267949,1.5707963267949,1.5707963267949,3.1415926535898,3.1415926535898
+3.1415926535898
+3.0616169978684e-015,50,0,1
+-35.355339059327,35.355339059327,0,0.70710678118655
+-50,6.1232339957368e-015,0,1
+define_curve family OUT tetra_size 1e+010 name srf.04.3e36.3
+bspline
+5,5,1
+-0.5,-0.5,-0.5,-0.5,-0.5
+-0,-0,-0,-0,-0
+0,50,3,1
+17.677669529664,50,3,1
+38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+50,17.677669529664,3,1
+50,0,3,1
+define_curve family IN tetra_size 1e+010 name tmp000 vertex1 GEOM.19 vertex2 GEOM.30
+bspline
+10,2,0
+0,0,0.4285714328289,0.85714286565781,0.89999997615814
+1.2857142686844,1.7142857313156,2.0999999046326,2.1428570747375,2.5714285373688
+3,3
+0,50,0
+0,50,0.4285714328289
+0,50,0.85714286565781
+0,50,0.89999997615814
+0,50,1.2857142686844
+0,50,1.7142857313156
+0,50,2.0999999046326
+0,50,2.1428570747375
+0,50,2.5714285373688
+0,50,3
+define_curve family IN tetra_size 1e+010 name srf.03.3e20.2 vertex2 GEOM.30
+bspline
+5,5,1
+-1,-1,-1,-1,-1
+-0.5,-0.5,-0.5,-0.5,-0.5
+-50,6.1232339957368e-015,3,1
+-50,17.677669529664,3,1
+-38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+-17.677669529664,50,3,1
+0,50,3,1
+define_surface name srf.00 family SYMMETRY tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.00
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve   crv.06
+polyline n_points 2
+1,0
+1,1
+coedge
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.03
+polyline n_points 2
+0,1
+0,0
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+-1,0,0,1
+-1,0.35355339059327,0,1
+-0.7761423749154,0.7761423749154,0,0.94280904158206
+-0.35355339059327,1,0,1
+0.35355339059327,1,0,1
+0.7761423749154,0.7761423749154,0,0.94280904158206
+1,0.35355339059327,0,1
+1,0,0,1
+-50,0,0,1
+-50,17.677669529664,0,1
+-38.80711874577,38.80711874577,0,0.94280904158206
+-17.677669529664,50,0,1
+17.677669529664,50,0,1
+38.80711874577,38.80711874577,0,0.94280904158206
+50,17.677669529664,0,1
+50,0,0,1
+define_surface name srf.03 family SYMMETRY tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.03
+polyline n_points 2
+0,0
+1,0
+coedge
+polyline n_points 2
+1,0
+1,1
+coedge
+polyline n_points 2
+1,1
+0,1
+coedge
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+-50,0,0
+-1,0,0
+-50,0,3
+-1,0,3
+define_surface name srf.03.1 family WALL tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.00
+polyline n_points 2
+0,0
+1,0
+coedge
+polyline n_points 2
+1,0
+1,1
+coedge
+polyline n_points 2
+1,1
+0,1
+coedge
+polyline n_points 2
+0,1
+0,0
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+-1,0,0,1
+-1,0.35355339059328,0,1
+-0.7761423749154,0.7761423749154,0,0.94280904158206
+-0.35355339059328,1,0,1
+0.35355339059328,1,0,1
+0.7761423749154,0.7761423749154,0,0.94280904158206
+1,0.35355339059328,0,1
+1,1.2246467991474e-016,0,1
+-1,0,3,1
+-1,0.35355339059328,3,1
+-0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+-0.35355339059328,1,3,1
+0.35355339059328,1,3,1
+0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+1,0.35355339059328,3,1
+1,1.2246467991474e-016,3,1
+define_surface name srf.03.2 family SYMMETRY tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.06
+polyline n_points 2
+0,0
+1,0
+coedge
+polyline n_points 2
+1,0
+1,1
+coedge
+polyline n_points 2
+1,1
+0,1
+coedge
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+1,0,0
+50,0,0
+1,0,3
+50,0,3
+define_surface name srf.03.3 family OUT tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.4
+polyline n_points 2
+0,0
+0.5,0
+coedge 3dcurve   tmp000
+polyline n_points 2
+0.5,0
+0.5,1
+coedge
+polyline n_points 2
+0.5,1
+0,1
+coedge
+polyline n_points 2
+0,1
+0,0
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+50,0,0,1
+50,17.677669529664,0,1
+38.807118745769,38.807118745769,0,0.94280904158206
+17.677669529664,50,0,1
+-17.677669529664,50,0,1
+-38.807118745769,38.807118745769,0,0.94280904158206
+-50,17.677669529664,0,1
+-50,6.1232339957368e-015,0,1
+50,0,3,1
+50,17.677669529664,3,1
+38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+17.677669529664,50,3,1
+-17.677669529664,50,3,1
+-38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+-50,17.677669529664,3,1
+-50,6.1232339957368e-015,3,1
+define_surface name srf.04 family SYMMETRY tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.03
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve   srf.04e23
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   srf.04e24
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   srf.04e25
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+-50,0,0
+-1,0,0
+-50,0,3
+-1,0,3
+define_surface name srf.04.1 family WALL tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.00
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve   srf.04.1e27
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   srf.04.1e28
+polyline n_points 2
+1,1
+0,1
+coedge
+polyline n_points 2
+0,1
+0,0
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+-1,0,0,1
+-1,0.35355339059328,0,1
+-0.7761423749154,0.7761423749154,0,0.94280904158206
+-0.35355339059328,1,0,1
+0.35355339059328,1,0,1
+0.7761423749154,0.7761423749154,0,0.94280904158206
+1,0.35355339059328,0,1
+1,1.2246467991474e-016,0,1
+-1,0,3,1
+-1,0.35355339059328,3,1
+-0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+-0.35355339059328,1,3,1
+0.35355339059328,1,3,1
+0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+1,0.35355339059328,3,1
+1,1.2246467991474e-016,3,1
+define_surface name srf.04.2 family SYMMETRY tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.06
+polyline n_points 2
+0,0
+1,0
+coedge
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   srf.04.2e32
+polyline n_points 2
+1,1
+0,1
+coedge
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+1,0,0
+50,0,0
+1,0,3
+50,0,3
+define_surface name srf.04.3 family OUT tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.4
+polyline n_points 2
+0,0
+0.5,0
+coedge 3dcurve   tmp00
+polyline n_points 2
+0.5,0
+0.5,1
+coedge 3dcurve   srf.04.3e36.3
+polyline n_points 2
+0.5,1
+0,1
+coedge 3dcurve   srf.04.3e37
+polyline n_points 2
+0,1
+0,0
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+50,0,0,1
+50,17.677669529664,0,1
+38.807118745769,38.807118745769,0,0.94280904158206
+17.677669529664,50,0,1
+-17.677669529664,50,0,1
+-38.807118745769,38.807118745769,0,0.94280904158206
+-50,17.677669529664,0,1
+-50,6.1232339957368e-015,0,1
+50,0,3,1
+50,17.677669529664,3,1
+38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+17.677669529664,50,3,1
+-17.677669529664,50,3,1
+-38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+-50,17.677669529664,3,1
+-50,6.1232339957368e-015,3,1
+define_surface name srf.05 family SYMMETRY tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 5
+coedge
+polyline n_points 2
+0,0
+0.5,0
+coedge 3dcurve   srf.04.3e36.3
+polyline n_points 2
+0.5,0
+1,0
+coedge 3dcurve   srf.04.2e32
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   srf.04.1e28
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   srf.04e24
+polyline n_points 2
+0,1
+0,0
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+-50,7.8886090522101e-031,3,1
+-50,17.677669529663,3,1
+-38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+-17.677669529664,50,3,1
+17.677669529664,50,3,1
+38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+50,17.677669529664,3,1
+50,0,3,1
+-1,0,3,1
+-1,0.35355339059328,3,1
+-0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+-0.35355339059328,1,3,1
+0.35355339059328,1,3,1
+0.7761423749154,0.7761423749154,2.8284271247462,0.94280904158206
+1,0.35355339059327,3,1
+1,0,3,1
+define_surface name srf.04.3.cut.0 family IN tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge
+polyline n_points 2
+1,1
+0.5,1
+coedge 3dcurve - tmp00
+polyline n_points 2
+0.5,1
+0.5,0
+coedge 3dcurve   crv.5
+polyline n_points 2
+0.5,0
+1,0
+coedge
+polyline n_points 2
+1,0
+1,1
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+50,0,0,1
+50,17.677669529664,0,1
+38.807118745769,38.807118745769,0,0.94280904158206
+17.677669529664,50,0,1
+-17.677669529664,50,0,1
+-38.807118745769,38.807118745769,0,0.94280904158206
+-50,17.677669529664,0,1
+-50,6.1232339957368e-015,0,1
+50,0,3,1
+50,17.677669529664,3,1
+38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+17.677669529664,50,3,1
+-17.677669529664,50,3,1
+-38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+-50,17.677669529664,3,1
+-50,6.1232339957368e-015,3,1
+define_surface name srf.03.3.cut.0 family IN tetra_size 1e+010
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   srf.03.3e20.2
+polyline n_points 2
+1,1
+0.5,1
+coedge 3dcurve - tmp000
+polyline n_points 2
+0.5,1
+0.5,0
+coedge 3dcurve   crv.5
+polyline n_points 2
+0.5,0
+1,0
+coedge
+polyline n_points 2
+1,0
+1,1
+bspline
+8,2,5,2,1
+0,0,0,0,0
+0.5,0.5,0.5,1,1
+1,1,1
+0,0,1,1
+50,0,0,1
+50,17.677669529664,0,1
+38.807118745769,38.807118745769,0,0.94280904158206
+17.677669529664,50,0,1
+-17.677669529664,50,0,1
+-38.807118745769,38.807118745769,0,0.94280904158206
+-50,17.677669529664,0,1
+-50,6.1232339957368e-015,0,1
+50,0,3,1
+50,17.677669529664,3,1
+38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+17.677669529664,50,3,1
+-17.677669529664,50,3,1
+-38.807118745769,38.807118745769,2.8284271247462,0.94280904158206
+-50,17.677669529664,3,1
+-50,6.1232339957368e-015,3,1
+affix 0
+define_model 1e+010 reference_size 1
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return
