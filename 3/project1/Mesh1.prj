@@ -1,5 +1,5 @@
 # ICEM CFD Project Settings
-# Saved by Chikitkin on lab08 on Thu Oct 21 18:31:29 RTZ 2 (зима) 2021
+# Saved by Chikitkin on lab08 on Wed Oct 27 18:47:50 RTZ 2 (зима) 2021
 # ICEM CFD - version 15.0 - Release date: Oct 15 2013
 
 array set file_name {
@@ -255,7 +255,7 @@ array set vid_options {
     wb_import_cad_associativity 0
 }
 set savedTreeVisibility {geomNode 1 geom_subsetNode 0 geomPointNode 2 geomCurveNode 2 geomSurfNode 2 blockingNode 1 block_subsetNode 2 block_vertNode 0 block_edgeNode 2 block_faceNode 0 block_blockNode 0 block_meshNode 0 topoNode 2 topo-root 2 partNode 2 part-IN 2 part-OUT 2 part-SOLID 2 part-SYMMETRY 2 part-VORFN 0 part-WALL 2}
-set last_view {rot {0.112186810005 0.187368864879 0.115536877318 -0.968998585196} scale {14.9573796851 14.9573796851 14.9573796851} center {11.029708473406222 14.829086406429536 2.9979699717796366} pos {147.709838582 177.942260081 0}}
+set last_view {rot {0.216280388332 0.0743153686368 0.142673895259 -0.962987112693} scale {61.8709122387 61.8709122387 61.8709122387} center {11.029708473406222 14.829086406429536 2.9979699717796366} pos {363.650372424 1005.70586187 0}}
 array set cut_info {
     active 0
     whole 1
@@ -300,41 +300,6 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         smoothing_steps 12
         first_layer_smoothing_steps 1
         loadmesh 0
-    }
-    array set transformBlocksToolsDEZ_data {
-        this transformBlocksToolsDEZ
-        type DEZ
-        transfrmBlocksEGVal 0
-        BlkList {}
-        copyGGVal1 0
-        ncopies 1
-        also_whole_geom 0
-        moveBlocksEGVal 0
-        x 0
-        y 0
-        z 0
-        pointList2 {}
-        copyGGVal2 0
-        blkRotateAxisOptionEGVal 0
-        axisList {}
-        rot_angle 90
-        RotateBlkCenterEGVal 0
-        center_point {}
-        copyGGVal3 0
-        BlocksMirrorAxisOptionEGVal 0
-        normPointList {}
-        ReflectBlocksCenterEGVal 0
-        copyGGVal4 0
-        xF 1
-        yF 1
-        zF 1
-        ScaleBlocksCenterEGVal 0
-        inc_parts {}
-        copyGGVal5 0
-        transBlocksEGVal 0
-        rotateBlocksList {}
-        fromLCS {}
-        toLCS {}
     }
     array set mParamsDEZ_data {
         this mParamsDEZ
@@ -393,6 +358,19 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         edgeRefDimGGVal 0
         ref_dim {}
     }
+    array set hexQualityDEZ_data {
+        this hexQualityDEZ
+        type DEZ
+        qualityDDList {Angle {Aspect ratio} {Constant Radius} {Custom quality} {Determinant 2x2x2} {Determinant 3x3x3} Distortion {Equiangle Skewness} {Eriksson Skewness} Ford {Hex. Face Aspect Ratio} {Hex. Face Distortion} {Max angle} {Max dihedral angle} {Max length} {Max ortho} {Max ortho 4.3v} {Max ratio} {Max sector volume} {Max side} {Max warp} {Max warp 4.3v} {Mid node} {Mid node Angle} {Min angle} {Min ortho} {Min sector volume} {Min side} {Opp.Face Area Ratio} {Opp.Face Parallelism} Orientation Quality Taper Volume {Volume Change} Warpage {X size} {Y size} {Z size}}
+        qualitydde {Determinant 3x3x3}
+        __hexQualityDDE_Last_Index 5
+        minv 0
+        maxv 1
+        ylim 20
+        nbars 20
+        onlyVisible 0
+        activePartsOnly 0
+    }
     array set hexMeshOptsDEZ_data {
         this hexMeshOptsDEZ
         type DEZ
@@ -423,13 +401,6 @@ namespace eval ::AIEnv::GUIManagement::DEZ {
         what_to_mesh {All Blocks}
         __hexMeshOptsDim_Last_Index 0
         nTetSmooth 20
-    }
-    array set setModelOptionsDEZ_data {
-        this setModelOptionsDEZ
-        type DEZ
-        tritol 9.9999999e-009
-        tritolabs 1
-        units unitless
     }
 }
 set geo_cad(use_toptol_userset) 1

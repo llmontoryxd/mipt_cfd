@@ -1,5 +1,5 @@
-# family_boco file written by ICEM CFD by Chikitkin on Thu Oct 21 18:31:29 RTZ 2 (Р·РёРјР°) 2021
-## solver ANSYS Fluent
+# family_boco file written by ICEM CFD by Chikitkin on Wed Oct 27 18:47:50 RTZ 2 (Р·РёРјР°) 2021
+## solver STAR-CD 3.2.0
 "SOLID"
 "SOLID" "color" 3403390
 "IN"

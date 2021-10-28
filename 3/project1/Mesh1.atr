@@ -1,46 +1,46 @@
-# Written by ICEM CFD 15.0, user Chikitkin, Thu Oct 21 18:31:29 RTZ 2 (Р·РёРјР°) 2021
+# Written by ICEM CFD 15.0, user Chikitkin, Wed Oct 27 18:47:50 RTZ 2 (Р·РёРјР°) 2021
 
 begin family SOLID
-    begin solver "ANSYS Fluent"
+    begin solver "STAR-CD 3.2.0"
         begin bctype color
             active 1
             color 3403390 1
         end bctype color
-    end solver "ANSYS Fluent"
+    end solver "STAR-CD 3.2.0"
 end family SOLID
 
 begin family IN
-    begin solver "ANSYS Fluent"
+    begin solver "STAR-CD 3.2.0"
         begin bctype color
             active 1
             color 16663900 1
         end bctype color
-    end solver "ANSYS Fluent"
+    end solver "STAR-CD 3.2.0"
 end family IN
 
 begin family OUT
-    begin solver "ANSYS Fluent"
+    begin solver "STAR-CD 3.2.0"
         begin bctype color
             active 1
             color 16663900 1
         end bctype color
-    end solver "ANSYS Fluent"
+    end solver "STAR-CD 3.2.0"
 end family OUT
 
 begin family SYMMETRY
-    begin solver "ANSYS Fluent"
+    begin solver "STAR-CD 3.2.0"
         begin bctype color
             active 1
             color 16663900 1
         end bctype color
-    end solver "ANSYS Fluent"
+    end solver "STAR-CD 3.2.0"
 end family SYMMETRY
 
 begin family WALL
-    begin solver "ANSYS Fluent"
+    begin solver "STAR-CD 3.2.0"
         begin bctype color
             active 1
             color 16663900 1
         end bctype color
-    end solver "ANSYS Fluent"
+    end solver "STAR-CD 3.2.0"
 end family WALL
